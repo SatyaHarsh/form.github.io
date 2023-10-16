@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form2</title>
+
+    <style>
+        #popup:hover
+        {
+            background-color: aquamarine;
+        }
+
+        #popup{
+            margin-left: 600px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+            background-color: cornflowerblue;
+        }
+
+        .legend{
+            font-family: fantasy;
+            font-size: 24px;
+            color: green;
+        }
+
+        .border{
+            margin-left: 470px;
+            border: 4px ridge red;
+            justify-content: center;
+            width: 25%;
+            background-color: lightgray;
+            font-family: cursive;
+            border-radius: 20px;
+        }
+        
+        .labels{
+            color: chocolate;
+        }
+
+        .inputs{
+            border: 2px solid red;
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <form action="usermessage.html">
+    
+    <fieldset class="border">
+        <legend class="legend">Personal Details</legend>
+
+    <label for="fname" class="labels">First Name</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" required class="inputs" id="fname" name="fname" >
+    <br> <br>
+
+    <label for="mname" class="labels">Middle Name</label>
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" required class="inputs" id="mname" name="mname">
+    <br><br>
+
+    <label for="flname" class="labels">Last Name</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" required class="inputs" id="lname" name="lname">
+    <br><br>
+
+    <label for="email" class="labels">Email</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" required class="inputs" id="email" name="email">
+    <br> <br>
+
+    <label for="dob" class="labels">DOB</label>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="date" id="dob" class="inputs" name="dob">
+    <br><br>
+
+    <label for="mnum" class="labels">Mobile Number</label>
+    <input type="text" id="mnum" name="mnum" required class="inputs"  pattern="[6-9]{1}[0-9]{9}">
+
+    </fieldset>
+    <br>
+    <fieldset class="border">
+
+        <legend class="legend">Educational Details</legend>
+
+        <label for="" class="labels">Department</label>
+        <br>
+
+        <input type="radio" id="eee" name="dept">
+        <label for="eee">EEE</label>
+
+        <input type="radio" id="cs" name="dept">
+        <label for="cs">CS</label>
+
+        <input type="radio" id="civil" name="dept">
+        <label for="civil">Civil</label>
+
+        <br><br>
+
+        <label for="yog" class="labels">Year of Graduatioin</label>
+        <input list="year" class="inputs" id="yog" name="yog">
+        <datalist id="year">
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        </datalist>
+        <br><br>
+
+        <label for="" class="labels">Skills</label>
+        <br>
+
+        <input type="radio" id="eee" name="java">
+        <label for="java" >JAVA</label>
+        <br>
+
+        <input type="radio" id="cs" name="css">
+        <label for="css">CSS</label>
+        <br>
+
+        <input type="radio" id="civil" name="javascript">
+        <label for="javascript">JAVASCRIPT</label>
+        <br>
+
+    </fieldset>
+    <br>
+
+    <input type="submit" id="popup">
+
+</form>
+    
+</body>
+</html>
